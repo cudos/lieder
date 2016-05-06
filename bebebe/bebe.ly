@@ -1,7 +1,7 @@
 \version "2.18.2"
 #(set-default-paper-size "b8landscape")
 \header {
-    title = "Bebe"
+    title = "Bebebe"
     composer = "Harry Hoffmann"
     tagline = "Den 6. Mai 2016"
 }
@@ -11,17 +11,18 @@
         \time 4/4
         \repeat volta 2 {
             \relative c'' {
-                e8\staccato c4
-                d16 c b a g8
+                g16 g g g
+                c8 c
+                b4 c
             }
         }
     }
     \addlyrics {
-        Be- be
-        da dl da dl da
+        Be be be be
+        be be be be
     }
     \layout { }
     \midi {
-        \tempo 4 = 98
+        \tempo 4 = 82
     }
 }
