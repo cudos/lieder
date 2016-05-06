@@ -13,7 +13,7 @@
             \relative c'' {
                 b8 b b4
                 \tuplet 3/2 {b16^\markup{"Mit der Zunge expressiv holpernd"} a g}
-                \tuplet 3/2 {f g a}
+                \tuplet 3/2 {fis g a}
                 b4
             }
         }
