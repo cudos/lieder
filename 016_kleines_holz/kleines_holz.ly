@@ -1,0 +1,38 @@
+\version "2.18.2"
+#(set-default-paper-size "b7landscape")
+\header {
+    title = "Kleines Holz"
+    composer = "Harry Hoffmann"
+    tagline = \markup {
+        \center-column {
+            "Den 22. Mai 2016 bei einem Spaziergang"
+            "zur Kastellburg bei Waldkirch"
+        }
+    }
+}
+\score {
+    \relative c'' {
+            <<
+            \new Staff {
+                \set Staff.midiInstrument = #"violin"
+                \repeat volta 2 {
+                    \key g \minor
+                    d4. c8 bes4 r4
+                    es4. d8 c4 r4
+                    d4. c8 bes4 r4
+                    es4. d8 c4 r4
+                }
+            }
+            \addlyrics {
+                Klei- nes Holz,
+                klei- nes Holz,
+                klei- nes Holz,
+                klei- nes Holz
+            }
+            >>
+    }
+    \layout {}
+    \midi {
+        \tempo 4 = 82
+    }
+}

@@ -8,10 +8,8 @@
 \score {
     \relative c {
             <<
-            \new Staff \with {
-                instrumentName = #"Cello"
-            } {
-                \set Staff.midiInstrument = #"cello"
+            \new Staff {
+                \set Staff.midiInstrument = #"electric guitar (clean)"
                 \clef bass
                 \repeat volta 2 {
                     b4 b b b
@@ -34,9 +32,7 @@
             }
             >>
     }
-    \layout {
-        indent = 2\cm
-    }
+    \layout {}
     \midi {
         \tempo 4 = 200
     }
